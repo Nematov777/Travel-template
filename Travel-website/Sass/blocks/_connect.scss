@@ -1,0 +1,59 @@
+.connect {
+    margin: 0 auto 140px;
+    width: 1246px;
+    // padding-left: 120px;
+
+    &__inner {
+
+
+        &-title {
+            margin-bottom: 16px;
+            font-family: 'Helvetica';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 37px;
+            color: #000000;
+        }
+
+        &---cards {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            // gap: 24px;
+            list-style-type: none;
+
+            &--card {
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-right: 24px;
+               
+
+                box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+                border-radius: 16px;
+
+                &:nth-child(4){
+                    padding-right: 0;
+                    margin-right: 0;
+                }
+
+
+                &-title {
+                    font-family: 'Netflix Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 31px;
+                    color: #000000;
+                }
+            }
+
+
+
+        }
+    }
+}

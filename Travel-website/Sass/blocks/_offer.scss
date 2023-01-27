@@ -1,0 +1,83 @@
+.offer {
+    &__inner {
+        padding-left: 70px;
+    }
+    &__list {
+        padding: 40px 0 80px;
+        @include flex(row, start, space-between);
+        gap: 24px;
+        &---item {
+            padding: 24px;
+            width: 700px;
+            gap: 24px;
+            @include flex(row, start, space-between);
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+            border-radius: 16px;
+            &--info {
+                height: 210px;
+                @include flex(column, start, space-between);
+                &-rek {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #000000;
+                    opacity: 0.5;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+                &-title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 31px;
+                    color: #000000;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+                &-btn {
+                    padding: 16px 32px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    background: #2659C3;
+                    border-radius: 32px;
+                    flex: none;
+                    order: 0;
+                    flex-grow: 0;
+                }
+            }
+        }
+        img {
+            border-radius: 20px;
+        }
+    }
+    &__browse {
+        .browse__list {
+            padding: 40px 0 72px;
+            list-style: none;
+            @include flex(row, start, space-between);
+            gap: 24px;
+            &--item {
+                width: 310px;
+                height: 200px;
+                padding: 146px 122px 23px 24px;
+                background-image: url(../../images/browse1.png);
+                border-radius: 10px;
+                &-title {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 31px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
